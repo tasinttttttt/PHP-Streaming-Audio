@@ -1,8 +1,11 @@
- _______ __                                 __                    _______                                  
-|     __|  |_.----..-----..---.-..--------.|__|.-----..-----.    |     __|.-----..----..--.--..-----..----*
-|__     |   _|   _||  -__||  _  ||        ||  ||     ||  _  |    |__     ||  -__||   _||  |  ||  -__||   _|
-|_______|____|__|  |_____||___._||__|__|__||__||__|__||___  |    |_______||_____||__|   \___/ |_____||__|  
-                                                      |_____|                                              
+   _____ _                            _                _____                          
+  / ____| |                          (_)              / ____|                         
+ | (___ | |_ _ __ ___  __ _ _ __ ___  _ _ __   __ _  | (___   ___ _ ____   _____ _ __ 
+  \___ \| __| '__/ _ \/ _` | '_ ` _ \| | '_ \ / _` |  \___ \ / _ \ '__\ \ / / _ \ '__|
+  ____) | |_| | |  __/ (_| | | | | | | | | | | (_| |  ____) |  __/ |   \ V /  __/ |   
+ |_____/ \__|_|  \___|\__,_|_| |_| |_|_|_| |_|\__, | |_____/ \___|_|    \_/ \___|_|   
+                                               __/ |                                  
+                                              |___/                                   
 Description
 ===========
 Autonomous pseudo streaming audio server. It supports the shoutcast protocol for mainstream players. This will output streaming mpeg for all other players.
@@ -53,7 +56,7 @@ $settings = array(
 	"database_file" => "music.db",		//Cache filename of the audio metadata.
 	"buffer_size" => 16384,				//Buffersize of the icy-data, not really important. Bigger buffer is less updates of the current song name.
 	"max_listen_time" => 14400,			//Maximum listen time of a user in seconds. Set to 4 hours.
-	"randomize_seed" => 31337			//The seed of the pseudo random playlist. Must be set to a contant otherwise the clients won't be in sync.
+	"randomize_seed" => 31337			//The seed of the pseudo random playlist. Must be set to a constant otherwise the clients won't be in sync.
 );
 
 Usage
@@ -68,5 +71,5 @@ Winamp - http://www.winamp.com/
 
 Contact
 =======
-Name: david
-Domain: beople.com
+Name: Viktor Kynchev
+Domain: http://kynchev.eu
